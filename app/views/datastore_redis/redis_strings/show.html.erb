@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<table> 
+  <tr>
+    <th>Key:</th>
+    <td><%= @redis_key %></td> 
+  </tr> 
+  <tr> 
+    <th>Value:</th> 
+    <td><%= @redis_value %></td> 
+  </tr>
+</table>
+
+<%= link_to 'Edit', edit_redis_string_path(@redis_key) %> |
+<%= link_to 'Back', redis_strings_path %>

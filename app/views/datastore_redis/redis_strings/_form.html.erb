@@ -1,0 +1,10 @@
+<%= form_tag({:controller => "redis_strings", :action => "create"}, :method => "post") do  %>
+  <%= label_tag :redis_key %>
+  <%= text_field_tag :redis_key, @redis_key %> 
+  <%= label_tag :redis_value %>
+  <%= text_field_tag :redis_value, @redis_value %> 
+
+  <div class="actions">
+    <%= submit_tag %>
+  </div>
+<% end %>

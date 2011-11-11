@@ -1,0 +1,23 @@
+<h1>Listing redis_strings</h1>
+
+<table>
+  <tr>
+    <th>Key</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @redis_strings.each do |redis_key| %>
+  <tr>
+    <td><%= redis_key %></td>
+    <td><%= link_to 'Show', redis_string_path(redis_key) %></td>
+    <td><%= link_to 'Edit', edit_redis_string_path(redis_key) %></td>
+    <td><%= link_to 'Destroy', redis_string_path(redis_key), confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Redis string', new_redis_string_path %>
