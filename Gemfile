@@ -17,3 +17,8 @@ gem "jquery-rails"
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 gem 'redis'
+
+group :development do 
+  gem 'rails' 
+end 
+
